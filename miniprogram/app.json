@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/original/original",
+    "pages/star/star",
+    "pages/prevue/prevue"
+  ],
+  "tabBar": {
+     "selectedColor": "#cb3232",
+     "position": "bottom",
+     "borderStyle": "white",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "./asset/image/index.png",
+        "selectedIconPath": "./asset/image/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+         "iconPath": "./asset/image/movie.png",
+         "selectedIconPath": "./asset/image/movie1.png",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/original/original",
+         "iconPath": "./asset/image/original.png",
+         "selectedIconPath": "./asset/image/original1.png",
+        "text": "原创"
+      },
+      {
+        "pagePath": "pages/star/star",
+         "iconPath": "./asset/image/star.png",
+         "selectedIconPath": "./asset/image/star1.png",
+        "text": "明星"
+      },
+      {
+        "pagePath": "pages/prevue/prevue",
+         "iconPath": "./asset/image/prevue.png",
+         "selectedIconPath": "./asset/image/prevue1.png",
+        "text": "预告片"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "1905",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

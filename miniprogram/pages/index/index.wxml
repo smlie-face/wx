@@ -1,0 +1,35 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="header">
+  <view class="left">
+    <view class="option"></view>
+    <view class="logo" bindtap="ggg"></view>
+  </view>
+  <view class="right">
+    <view class="search" bindtap="search"></view>
+    <view class="user"></view>
+  </view>
+</view>
+<view class="down" wx:if="{{show}}">
+  <input class="ipt" type="text" />
+  <text class="seek">搜索</text>
+</view>
+<view class="tabs">
+
+  <view class="tab {{num==index?'bule':''}}" wx:for="{{tabs}}" wx:key="index" bindtap="biases" data-i="{{index}}">
+    <navigator url="{{item.option}}" open-type="reLaunch"> {{item.name}} </navigator>
+
+  </view>
+</view>
+<view class="page-section page-section-spacing swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+    style="height: 252rpx;">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image class="slideshow" src="{{item.picture}}"></image>
+          <text class="slideshowDesc">{{item.title}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

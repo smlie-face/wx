@@ -1,0 +1,99 @@
+/* miniprogram/pages/index/index.wxss */
+.header,
+.left,
+.right,
+.down,
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 20rpx 3%;
+  border-bottom: 7rpx solid #ccc;
+  line-height: 60rpx;
+}
+
+.logo {
+  width: 200rpx;
+  height: 33rpx;
+  background: url(http://static.m1905.cn/images/navigation_all/img_logo_home_phone.png) no-repeat;
+  background-size: 100%;
+}
+
+.search,
+.user,
+.option {
+  width: 30rpx;
+  height: 30rpx;
+  background-size: 100%;
+  margin-right: 30rpx;
+}
+
+.option {
+  background-image: url(http://static.m1905.cn/images/navigation_all/icon_nav_phone.png);
+}
+
+.search {
+  background-image: url(http://static.m1905.cn/images/navigation_all/icon_search_phone.png);
+}
+
+.user {
+  background-image: url(http://static.m1905.cn/images/navigation_all/icon_member_phone.png);
+}
+
+.down {
+  width: 100%;
+  height: 130rpx;
+  border-bottom: 4rpx solid #ccc;
+  line-height: 120rpx;
+}
+
+.ipt,
+.seek {
+  display: block;
+}
+
+.ipt {
+  width: 70%;
+  height: 80rpx;
+  outline: none;
+  border: 2rpx solid #ccc;
+  margin: 25rpx 0 0 30rpx;
+}
+
+.seek {
+  margin-right: 65rpx;
+  font-size: 30rpx;
+  color: #2287dd;
+}
+
+.tabs {
+  padding: 0 3%;
+  line-height: 120rpx;
+}
+
+.tab {
+  width: 20%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+}
+.bule{
+  color: #2287dd;
+}
+.slideshow{
+  width: 100%;
+  height: 252rpx;
+}
+.swiper-item{
+  position: relative;
+}
+.slideshowDesc{
+  position: absolute;
+  bottom: 45rpx;
+  left: 0;
+  display: block;
+  color: #fff;
+  font-size: 30rpx;
+}
