@@ -1,1 +1,73 @@
 /* pages/movie/movie.wxss */
+.tabs {
+  display: flex;
+  justify-content: left;
+}
+
+.tab {
+  display: block;
+  width: 20%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 40rpx;
+  padding-bottom: 10rpx;
+}
+
+.bule {
+  color: #2267ad;
+  position: relative;
+}
+
+.bule::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -12rpx;
+  content: '';
+  clear: both;
+  display: block;
+  width: 24rpx;
+  height: 5rpx;
+  background-color: #2267ad;
+}
+.list{
+  margin-top: 30rpx;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  width: 50%;
+
+}
+.title{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #000;
+}
+.desc{
+  line-height: 60rpx;
+}
+.desc text{
+  display:block;
+}
+.call{
+  font-size: 32rpx;
+  color: #333;
+}
+.personnel{
+  width: 80%;
+  font-size: 30rpx;
+  color: #666;
+  height: 60rpx;
+  overflow: hidden;
+}
+.right{
+  width: 400rpx;
+
+}
+.right image{
+width: 100%;
+}
+

@@ -3,7 +3,8 @@
 .left,
 .right,
 .down,
-.tabs {
+.tabs ,
+.list{
   display: flex;
   justify-content: space-between;
 }
@@ -43,17 +44,24 @@
 }
 
 .down {
+  position: absolute;
+  top: 60rpx;
+  left: 0;
   width: 100%;
-  height: 130rpx;
-  border-bottom: 4rpx solid #ccc;
+  height: 138rpx;
   line-height: 120rpx;
+  z-index: 999;
+ background-color: rgba(255, 255, 255, .8);
 }
 
 .ipt,
 .seek {
   display: block;
 }
-
+.one,.two,.three{
+  padding: 0 3%;
+  margin-top: 30rpx;
+}
 .ipt {
   width: 70%;
   height: 80rpx;
@@ -96,4 +104,80 @@
   display: block;
   color: #fff;
   font-size: 30rpx;
+}
+
+.list {
+  width: 100%;
+  margin-top: 30rpx;
+
+}
+
+image {
+  display: block;
+  width: 500rpx;
+  height: 140rpx;
+}
+
+.wTop {
+  width: 100%;
+  font-size: 30rpx;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.wBot text {
+  display: inline-block;
+  font-size: 24rpx;
+  color: #999;
+  margin-right: 10rpx;
+}
+.text{
+  width: 100%;
+  height: 80rpx;
+  overflow: hidden;
+  font-size: 36rpx;
+  color: #333;
+  text-align: left;
+  line-height: 80rpx;
+border-bottom: 2rpx dotted #ccc;
+position: relative;
+
+}
+.text::before{
+  content: "";
+  clear: both;
+  display: block;
+  width: 6rpx;
+  height: 50rpx;
+  background-color: #2287dd;
+  position: absolute;
+  top: 15rpx;
+}
+.threeTop{
+  display: flex;
+  justify-content: left;
+}
+.threeTab{
+  width: 20%;
+  text-align: center;
+  line-height: 60rpx;
+  font: 32rpx;
+  color: #000;
+  padding: 20rpx 0;
+}
+.active{
+  color: #2287dd;
+  position: relative;
+}
+.active::before{
+  content: "";
+  clear: both;
+  display: block;
+  width: 50rpx;
+  height: 5rpx;
+  background-color: #2287dd;
+  position: absolute;
+  bottom: 0rpx;
+  left: 45rpx;
 }

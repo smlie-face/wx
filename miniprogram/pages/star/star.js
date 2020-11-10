@@ -1,18 +1,51 @@
 // pages/star/star.js
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    tab: ['最新', '华语', '海外'],
+    num: 0,
+    content: [],
+    sum: null
   },
-
+  cut(e) {
+    this.liaison()
+    this.setData({
+      num: e.currentTarget.dataset.i
+    })
+  },
+  liaison() {
+    var that = this
+    db.collection('star').where({
+        from: this.data.num,
+      })
+      .get()
+      .then(res => {
+        that.data.content = res.data
+        that.setData({
+          content: that.data.content
+        })
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  },
+  toData(e) {
+    this.setData({
+      sum: e.currentTarget.dataset.index
+    })
+    wx.navigateTo({
+   url : '../starLsit/starLsit?id=' + this.data.sum
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.liaison()
   },
 
   /**

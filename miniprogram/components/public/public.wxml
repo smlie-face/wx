@@ -1,0 +1,27 @@
+<!--components/public/public.wxml-->
+<view class="public">
+  <view class="top"></view>
+  <view class="big">相关新闻</view>
+  <view class="text">
+    <view class="texton" wx:for="{{content}}" wx:key="index" wx:if="{{index<5}}" bindtap="skip" data-i="{{item.id}}">{{item.title}}</view>
+  </view>
+  <view class="big">最惹眼球</view>
+  <view class="stars">
+    <view class="star" wx:for="{{content1}}" wx:key="index" wx:if="{{index<8}}" bindtap="skip1" data-i="{{item.id}}">
+      <view class="left">
+         <image src="{{item.picture}}"></image> 
+      </view>
+      <view class="rigth">{{item.title}}</view>
+    </view>
+  </view>
+  <view class="big">热映上播</view>
+  <view class="movies">
+    <view class="movie" wx:for="{{content2}}" wx:key="index" wx:if="{{index<10}}" bindtap="skip2" data-i="{{item.id}}">
+      <view class="mtop">
+         <image src="{{item.picture}}"></image> 
+      </view>
+      <view class="bot">{{item.title}}</view>
+
+    </view>
+  </view>
+</view>

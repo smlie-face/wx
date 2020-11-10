@@ -1,0 +1,14 @@
+<!--pages/starLsit/starLsit.wxml-->
+
+<view class="main">
+  <view class="header">
+    {{content[0].title}}
+  </view>
+   <text>{{content[0].content}}</text>
+  <image src="{{content[0].picture_one}}"></image>
+  <text>{{content[0].content_one}}</text>
+
+  <image src="{{content[0].picture_two}}"></image>
+  <text>{{content[0].content_two}}</text>
+</view>
+<public/>

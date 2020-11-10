@@ -1,1 +1,66 @@
 /* pages/star/star.wxss */
+.tabs,
+.list,
+.wBot {
+  display: flex;
+  justify-content: left;
+}
+
+.tab {
+  display: block;
+  width: 20%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 40rpx;
+  padding-bottom: 10rpx;
+}
+
+.bule {
+  color: #2267ad;
+  position: relative;
+}
+
+.bule::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -12rpx;
+  content: '';
+  clear: both;
+  display: block;
+  width: 24rpx;
+  height: 5rpx;
+  background-color: #2267ad;
+}
+
+.content {
+  padding: 20rpx 5%;
+}
+
+.list {
+  width: 100%;
+  margin-top: 30rpx;
+
+}
+
+image {
+  display: block;
+  width: 500rpx;
+  height: 140rpx;
+}
+
+.wTop {
+  width: 100%;
+  font-size: 30rpx;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.wBot text {
+  display: inline-block;
+  font-size: 24rpx;
+  color: #999;
+  margin-right: 10rpx;
+}

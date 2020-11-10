@@ -1,0 +1,23 @@
+/* pages/movieLsit/movieLsit.wxss */
+
+.top{
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  padding: 30rpx 0;
+}
+video{
+  width: 100%;
+}
+.desc{
+  padding: 20rpx 3%;
+  font-size: 32rpx;
+  color: #333;
+}
+.cntent{
+  padding: 0 3%;
+  font-size: 30rpx;
+  color: #666;
+}

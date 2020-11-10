@@ -33,3 +33,39 @@
     </block>
   </swiper>
 </view>
+<view class="one">
+  <view class="list" wx:for="{{content}}" wx:key="index"
+    data-index="{{item.id}}" bindtap="toData" wx:if="{{index<5}}">
+    <view class="wordy">
+      <view class="wTop">{{item.title}}</view>
+      <view class="wBot">
+        <text class="time">{{item.time}}</text>
+        <text class="star">{{item.field}}</text>
+        <text class="desc">{{item.field2}}</text>
+      </view>
+    </view>
+    <image src="{{item.picture}}">
+    </image>
+  </view>
+</view>
+<view class="two">
+  <view class="text"  wx:for="{{content1}}" wx:key="index"
+    data-index="{{item.id}}" bindtap="toData" wx:if="{{index<8}}" >{{item.title}}</view>
+</view>
+<view class="three">
+  <view class="threeTop">
+    <view class="threeTab {{num1==index?'active':''}}" wx:for="{{tab}}"  wx:key="index" bindtap="skip" data-i="{{index}}">{{item}}</view>
+  </view>
+  <view class="list" wx:for="{{content2}}" wx:key="index"
+    data-index="{{item.id}}" bindtap="skip2">
+    <view class="wordy">
+      <view class="wTop">{{item.title}}</view>
+      <view class="wBot">
+        <text class="time">{{item.time}}</text>
+      </view>
+    </view>
+    <image src="{{item.picture}}">
+    </image>
+  </view>
+</view>
+<footer></footer>

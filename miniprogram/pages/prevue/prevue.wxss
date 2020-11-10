@@ -1,1 +1,10 @@
 /* pages/prevue/prevue.wxss */
+.public{
+  padding: 0 3%;
+}
+.top{
+  width: 100%;
+ height: 4rpx;
+ background-color: #ccc;
+  padding: 50rpx 0;
+}

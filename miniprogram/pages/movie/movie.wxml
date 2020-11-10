@@ -1,2 +1,23 @@
 <!--pages/movie/movie.wxml-->
-<text>pages/movie/movie.wxml</text>
+<view class="movie">
+  <view class="tabs">
+    <view class="tab {{num==index?'bule':''}}" wx:for="{{tabs}}" wx:key="index" bindtap="cut"
+    data-i="{{index}}" data-l="{{item}}">{{item}}</view>
+  </view>
+  <view class="list" wx:for="{{content}}" wx:key="index" bindtap="skip" data-i="{{item.id}}">
+  <view class="left">
+    <view class="title">{{item.title}}</view>
+    <view class="desc">
+      <text class="call">阵容:</text>
+      <text class="personnel">{{item.actor}}</text>
+    </view>
+    <view class="desc">
+      <text class="call">导演:</text>
+      <text class="personnel">{{item.direct}}</text>
+    </view>
+  </view>
+  <view class="right">
+    <image src="{{item.picture}}"></image>
+  </view>
+  </view>
+</view>

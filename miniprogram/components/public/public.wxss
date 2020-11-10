@@ -1,0 +1,62 @@
+/* components/public/public.wxss */
+.public {
+  padding: 0 3%;
+}
+
+.top {
+  width: 100%;
+  height: 4rpx;
+  background-color: #ccc;
+  margin: 50rpx 0;
+}
+
+.big {
+  font-size: 34rpx;
+  color: #000;
+  font-weight: bold;
+  padding: 30rpx 0;
+}
+
+.texton {
+  width: 100%;
+  text-align: left;
+  line-height: 60rpx;
+  font-size: 30rpx;
+
+}
+
+.left image,
+.mtop image {
+  width: 100%;
+}
+
+.left image {
+  width: 300rpx;
+  height: 170rpx;
+}
+
+.star {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  width: 50%;
+}
+
+.right ,.bot{
+  font: 40rpx;
+  color: #333;
+  line-height: 80rpx;
+}
+.movies{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.movie{
+  width: 46%;
+}
+.mtop {
+  width: 100%;
+}

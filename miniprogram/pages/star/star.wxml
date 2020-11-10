@@ -1,2 +1,20 @@
 <!--pages/star/star.wxml-->
-<text>pages/star/star.wxml</text>
+<view class="tabs">
+  <text class="tab {{num==index?'bule':''}}" wx:for="{{tab}}" wx:key="index" bindtap="cut"
+    data-i="{{index}}">{{item}}</text>
+</view>
+<view class="content">
+  <view class="list" wx:for="{{content}}" wx:key="index"
+    data-index="{{item.id}}" bindtap="toData">
+    <view class="wordy">
+      <view class="wTop">{{item.title}}</view>
+      <view class="wBot">
+        <text class="time">{{item.time}}</text>
+        <text class="star">{{item.field}}</text>
+        <text class="desc">{{item.field2}}</text>
+      </view>
+    </view>
+    <image src="{{item.picture}}">
+    </image>
+  </view>
+</view>

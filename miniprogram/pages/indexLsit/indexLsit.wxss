@@ -1,0 +1,26 @@
+/* pages/indexLsit/indexLsit.wxss *//* pages/starLsit/starLsit.wxss */
+.main {
+  padding: 0 5%;
+}
+
+.header {
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #000;
+}
+
+image,
+text {
+  display: block;
+  margin: 0 auto;
+}
+
+image {
+  margin: 30rpx 0;
+}
+
+text {
+  margin: 30rpx 0;
+  font-size: 30rpx;
+  color: #666;
+}

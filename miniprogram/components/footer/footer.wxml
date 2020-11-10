@@ -1,0 +1,10 @@
+<!--components/footer/footer.wxml-->
+<view class="top">
+  <text wx:for="{{top}}" wx:key="index">{{item}}</text>
+</view>
+<view class="centre">
+  <text wx:for="{{centre}}" wx:key="index">{{item}}</text>
+</view>
+<view class="bottom">
+  <text>电影频道节目中心官方网站</text>
+</view>

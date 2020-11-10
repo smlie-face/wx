@@ -1,0 +1,10 @@
+<!--pages/movieLsit/movieLsit.wxml-->
+<view class="movie">
+  <view class="top">{{sum[0].title}}</view>
+  <video src="{{sum[0].movie_url}}"></video>
+  <view class="desc">简介：</view>
+  <view class="cntent">
+    {{sum[0].content}}
+  </view>
+</view>
+<public/>

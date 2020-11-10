@@ -1,0 +1,58 @@
+/* pages/login/login.wxss */
+.imgs {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.login {}
+
+.top {
+  display: flex;
+  justify-content: left;
+  padding-left: 5%;
+}
+
+.content {
+  margin-top: 45rpx;
+  height: 40rpx;
+  margin-left: 70rpx;
+  padding-left: 5%;
+}
+
+.bottom {
+  margin-top: 20rpx;
+}
+
+.bottom text {
+  display: block;
+}
+
+.shen {
+  text-align: left;
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+.huo {
+  margin-top: 20rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #ccc;
+  padding-left: 5%;
+
+}
+
+.btn {
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+  width: 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #00FF7F;
+  text-align: center;
+  border-radius: 30rpx;
+}
